@@ -19,6 +19,11 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+
+			if($text == "กระดิ่ง") {
+				$text = "ส่งอะไรมาเนี่ย ห๊ะ";
+			}
+
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
